@@ -37,7 +37,7 @@ const Hero = () => {
         </div>
       </section>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 w-full h-full gap-3 px-3'>
+      <div className='grid grid-cols-1 md:grid-cols-2 w-full h-full gap-3 md:px-3'>
 
 
       <section className='relative w-full bg-[url(https://www.apple.com/v/home/ci/images/promos/apple-watch-series-11/promo_apple_watch_series_11__b63hxviqvonm_medium_2x.jpg)] bg-cover bg-center h-[560px]'>

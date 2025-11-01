@@ -4,7 +4,7 @@ import NavPanel from './NavPanel';
 const NavBar = ({setNavPanelOpen}) => {
   const navItems = ['Store','Mac','iPad','iPhone','Watch','Vision','Airpods','TV & Home','Entertainment','Accessories','Support'];
   return (
-    <nav className='h-11 w-full bg-[#181818] absolute top-0 left-0 z-30 min-w-[320px]'>
+    <nav className='h-11 w-full bg-[#181818] backdrop:blur-2xl absolute top-0 left-0 z-30 min-w-[320px]'>
       <ul className='w-full max-w-[996px] flex items-center justify-between m-auto px-5 cursor-pointer text-[rgba(255,255,255,.8)] [&>*:hover]:text-white 
       *:transition-colors *:duration-300'>
         <li className='w-[70%] sm:w-[80%] md:w-fit'>
