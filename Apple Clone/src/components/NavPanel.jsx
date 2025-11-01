@@ -4,8 +4,8 @@ import { IoCloseOutline } from "react-icons/io5";
 const NavPanel = ({setNavPanelOpen}) => {
   const navItems = ['Store','Mac','Ipad','Watch','Vision','Airpods','TV & Home','Entertainment','Accessories','Support'];
   return (
-    <div className='md:hidden w-full h-screen bg-[#161617] px-15 py-20 [&>*:hover]:text-white text-[rgba(255,255,255,.8)] relative z-10 '>
-      <IoCloseOutline className='absolute top-5 right-3  text-3xl cursor-pointer duration-500 ' onClick={()=>setNavPanelOpen(false)}/>
+    <div className='md:hidden w-full h-screen bg-[#161617] px-15 py-20 [&>*:hover]:text-white text-[rgba(255,255,255,.8)] relative '>
+      <IoCloseOutline className='absolute top-5 right-3  text-3xl cursor-pointer duration-500 ' onClick={()=>{setNavPanelOpen(false)}}/>
       {navItems.map((item,index)=>{
           return <li key={index} className='list-none font-bold  text-[26px] cursor-pointer flex justify-between group'>{item}
           <span className='opacity-0 group-hover:opacity-100 transition-all duration-100 ease-in'>

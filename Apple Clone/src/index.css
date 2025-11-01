@@ -5,6 +5,17 @@
   src: url(./fonts/sf-pro-display_semibold.woff2);
 }
 
+@font-face {
+  font-family: sf-regular;
+  src: url(./fonts/sf-regular.woff2);
+}
+
+@theme {
+  --font-sf-pro: "sf-pro";
+  --font-sf-regular: "sf-regular";
+}
+
 html,body{
   min-width: 320px;
+  scroll-behavior: smooth;
 }
