@@ -5,6 +5,7 @@ import gsap from 'gsap';
 import {useGSAP} from '@gsap/react'  
 import Hero from './components/Hero';
 import './index.css'
+import NavSlideBar from './components/navSlideBar';
 
 const App = () => {
   const[navPanelOpen,setNavPanelOpen] = useState(false);
@@ -29,8 +30,11 @@ const App = () => {
       <div className='-translate-y-full fixed top-0 left-0 w-full h-screen z-50' ref={navPanelRef}>
         <NavPanel setNavPanelOpen={setNavPanelOpen}/>
       </div>
-      <div className='h-[90%] w-full'>
+      <div className='w-full'>
         <Hero/>
+      </div>
+      <div>
+      <NavSlideBar/>
       </div>
     </div>
   )
