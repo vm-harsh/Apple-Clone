@@ -86,7 +86,8 @@ const NavSlideBar = () => {
       <div className='h-[400px] lg:h-screen w-full flex overflow-hidden gap-3 p-3 items-center justify-between '>
       <div className='flex gap-2 translate-x-[-70%] transition-transform duration-700 ease-in-out h-full w-full'  style={{transform:`translateX(-${currentIndex*80}%)`}}>
         {cards.map((card,index)=>{
-          return <div key={index}  className={`h-full bg-cover bg-center shrink-0 w-[80%] relative `} style={{ backgroundImage: `url(${card.image})` }}>
+          return <div key={index}  className={`h-full bg-cover bg-center shrink-0 w-[80%] `}>
+            <div className='relative'><img  src={card.image}/></div>
             <div className={`absolute bottom-10 left-10 flex flex-col-reverse md:flex-row-reverse items-center gap-3 text-xl transition-all duration-700 ease-in-out ${
               index == currentIndex+1 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-full"
             }`}>
