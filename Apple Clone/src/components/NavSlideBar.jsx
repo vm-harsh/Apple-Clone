@@ -82,23 +82,24 @@ const NavSlideBar = () => {
 
 
   return (
-    <div className='flex flex-col items-center'>
-      <div className='h-[400px] lg:h-screen w-full flex overflow-hidden gap-3 p-3 items-center justify-between '>
+    <div className='flex flex-col items-center relative'>
+      <div className='  w-full flex overflow-hidden gap-3 p-3 items-center justify-between '>
       <div className='flex gap-2 translate-x-[-70%] transition-transform duration-700 ease-in-out h-full w-full'  style={{transform:`translateX(-${currentIndex*80}%)`}}>
         {cards.map((card,index)=>{
           return <div key={index}  className={`h-full bg-cover bg-center shrink-0 w-[80%] `}>
-            <div className='relative'><img  src={card.image}/></div>
-            <div className={`absolute bottom-10 left-10 flex flex-col-reverse md:flex-row-reverse items-center gap-3 text-xl transition-all duration-700 ease-in-out ${
+            <div className='relative'><img  src={card.image}/>
+            <div className={`flex flex-col-reverse md:flex-row-reverse items-center justify-start md:justify-end px-4 md:items-end h-full w-full gap-3 absolute bottom-10  md:left-10 text-xl transition-all duration-700 ease-in-out ${
               index == currentIndex+1 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-full"
             }`}>
-            <button className='px-4 py-2 bg-white rounded-full font-[550] font-sf-regular text-base'>{card.btn}</button>
-            <h4 className='text-white'><span className='font-semibold'>{card.genere}. </span>{card.text}</h4>
+            <button className='px-4 py-2 bg-white rounded-full font-[550] font-sf-regular text-sm md:text-base'>{card.btn}</button>
+            <h4 className='text-white text-lg md:text-xl'><span className='font-semibold'>{card.genere}. </span>{card.text}</h4>
+            </div>
             </div>
             </div>
         })}
       </div>
     </div>
-    <div className='flex gap-2 mb-10'>
+    <div className='flex gap-2 mb-10 absolute -bottom-13'>
       <div className=' '></div>
       {Array.from({ length: 9 }).map((_, index) => (
   <div
