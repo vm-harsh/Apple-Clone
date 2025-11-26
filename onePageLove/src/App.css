@@ -1,0 +1,10 @@
+@font-face {
+  font-family:woffbold;
+  src: url('./fonts/font1.woff2');
+}
+
+@theme{
+  --font-clash:"woffbold";
+}
+
+@import "tailwindcss";
