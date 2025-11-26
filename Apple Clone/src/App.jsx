@@ -6,6 +6,7 @@ import {useGSAP} from '@gsap/react'
 import Hero from './components/Hero';
 import './index.css'
 import NavSlideBar from './components/navSlideBar';
+import NavSlideBar2 from './components/NavSlideBar2';
 
 const App = () => {
   const[navPanelOpen,setNavPanelOpen] = useState(false);
@@ -35,6 +36,9 @@ const App = () => {
       </div>
       <div>
       <NavSlideBar/>
+      </div>
+      <div>
+      <NavSlideBar2/>
       </div>
     </div>
   )
